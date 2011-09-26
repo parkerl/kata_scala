@@ -1,0 +1,4 @@
+[0m[[0minfo[0m] [0m[32mNumberPrinterSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mPrinting loops of numbers [0m[0m
+[0m[[0minfo[0m] [0m[32m- should print 1 to 5[0m[0m
+[0m[[0minfo[0m] [0m[32m- should print again if there is no empty input[0m[0m

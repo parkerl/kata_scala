@@ -1,0 +1,4 @@
+[0m[[0minfo[0m] [0m[32mFibPrinterSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mPrinting fibonaci numbers up to n [0m[0m
+[0m[[0minfo[0m] [0m[32m- should print 11 when given 2[0m[0m
+[0m[[0minfo[0m] [0m[32m- should print 112358 when given 6[0m[0m
