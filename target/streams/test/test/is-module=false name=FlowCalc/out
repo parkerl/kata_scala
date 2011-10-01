@@ -1,0 +1,4 @@
+[0m[[0minfo[0m] [0m[32mFlowCalc:[0m[0m
+[0m[[0minfo[0m] [0m[32mCalculate flow based on user inputs for Diameter, velocity, density and viscosity [0m[0m
+[0m[[0minfo[0m] [0m[31m- ask for inputs for Diameter, velocity, density and viscosity *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  List() was not equal to List(Diameter> , Velocity> , Density> , Viscosity> ) (step4.test.scala:32)[0m[0m

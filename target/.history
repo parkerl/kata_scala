@@ -14,3 +14,23 @@ tset
 test
 run
 exit
+run
+s = 160*12
+val s = 160*12
+exit
+test
+tset
+test
+List("") << "Test"
+List.empty << "Test"
+List() << "Test"
+var l = List.empty
+exit
+tset
+test
+exit
+test
+exit
+test
+run
+exit

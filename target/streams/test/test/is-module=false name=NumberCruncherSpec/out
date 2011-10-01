@@ -1,7 +1,7 @@
 [0m[[0minfo[0m] [0m[32mNumberCruncherSpec:[0m[0m
-[0m[[0minfo[0m] [0m[32mTake a series of numbers and sort them in either ascending or descending order [0m[0m
+[0m[[0minfo[0m] [0m[32mTake a series of numbers and sort them in ascending order [0m[0m
 [0m[[0minfo[0m] [0m[32m- should print 123 when given 1,2,3 as input[0m[0m
 [0m[[0minfo[0m] [0m[32m- should print 321 when given 1,2,3 as input[0m[0m
 [0m[[0minfo[0m] [0m[32m- should build a list from a series of strings[0m[0m
-[0m[[0minfo[0m] [0m[32m- should print an error when passes a string that is not a number[0m[0m
-[0m[[0minfo[0m] [0m[32m- should print an error when passes a string that is not an integer[0m[0m
+[0m[[0minfo[0m] [0m[32m- should print an error when passed a string that is not a number[0m[0m
+[0m[[0minfo[0m] [0m[32m- should print an error when passed a string that is not an integer[0m[0m
