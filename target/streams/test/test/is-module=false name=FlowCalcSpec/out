@@ -4,3 +4,4 @@
 [0m[[0minfo[0m] [0m[32m- calculate the flow and output Laminar for flow type when given 1,1,1,1[0m[0m
 [0m[[0minfo[0m] [0m[32m- calculate the flow and output Transient for flow type when given 22,100,10,10[0m[0m
 [0m[[0minfo[0m] [0m[32m- calculate the flow and output Turbulent for flow type when given 44,100,10,10[0m[0m
+[0m[[0minfo[0m] [0m[32m- should ask for parameters again if the user enters Y when prompted[0m[0m

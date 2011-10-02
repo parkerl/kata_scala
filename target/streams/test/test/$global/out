@@ -1,10 +1,10 @@
 [0m[[0mdebug[0m] [0mRunning Test FlowCalcSpec : subclass(false, org.scalatest.Suite) with arguments [0m
 [0m[[0mdebug[0m] [0mRunning Test NumberPrinterSpec : subclass(false, org.scalatest.Suite) with arguments [0m
-[0m[[0mdebug[0m] [0mRunning Test NumberCruncherSpec : subclass(false, org.scalatest.Suite) with arguments [0m
 [0m[[0mdebug[0m] [0mRunning Test FibPrinterSpec : subclass(false, org.scalatest.Suite) with arguments [0m
-[0m[[0minfo[0m] [0mPassed: : Total 13, Failed 0, Errors 0, Passed 13, Skipped 0[0m
+[0m[[0mdebug[0m] [0mRunning Test NumberCruncherSpec : subclass(false, org.scalatest.Suite) with arguments [0m
+[0m[[0minfo[0m] [0mPassed: : Total 14, Failed 0, Errors 0, Passed 14, Skipped 0[0m
 [0m[[0mdebug[0m] [0mPassed tests:[0m
-[0m[[0mdebug[0m] [0m	NumberCruncherSpec[0m
-[0m[[0mdebug[0m] [0m	NumberPrinterSpec[0m
-[0m[[0mdebug[0m] [0m	FlowCalcSpec[0m
 [0m[[0mdebug[0m] [0m	FibPrinterSpec[0m
+[0m[[0mdebug[0m] [0m	NumberCruncherSpec[0m
+[0m[[0mdebug[0m] [0m	FlowCalcSpec[0m
+[0m[[0mdebug[0m] [0m	NumberPrinterSpec[0m

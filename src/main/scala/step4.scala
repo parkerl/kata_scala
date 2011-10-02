@@ -31,15 +31,24 @@ class FlowCalc extends InputReader with Output{
     
   }
   
-  def run{
+  def getParameters: Int = {
+  
     val d = read("Diameter> ").toInt
     val v =  read("Velocity> ").toInt
     val rho =  read("Density> ").toInt
     val mu =  read("Viscosity> ").toInt
      
-     val result = calculate(d,v,rho,mu)
+     calculate(d,v,rho,mu)
      
-     print(result + " : " + flowType(result))
+     
+  
+  }
+  
+  def run{
+    do {var result = getParameters
+    print(result + " : " + flowType(result))
+    } while(read("Calculate again?> ") == "Y")
+
   }
   
      
