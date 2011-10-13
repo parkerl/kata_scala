@@ -30,14 +30,14 @@ class SciCalcSpec extends Spec with ShouldMatchers {
       
        it("calculate 1 + 1 = 2") {
          val calc = new SciCalc
-         calc.calculate(("1","+","1")) should be(2)
+         calc.calculate(("1+1")) should be(2)
          
                   
       }
       
       it("should calculate 10 / 5 = 2"){
         val calc = new SciCalc
-        calc.calculate(("10", "/", "5")) should be(2)
+        calc.calculate(("10 / 5")) should be(2)
       }
       
       it("should string together subsequent calculations, 1 +1, + 1 = 3"){
@@ -45,6 +45,16 @@ class SciCalcSpec extends Spec with ShouldMatchers {
         calc.setInput(List("1+1","+1","",""))
         calc.run
         calc.outmessages should be(List("= 2.0","= 3.0"))
+      }
+      
+      it("should correctly run the following calculations"){
+      val calc = new SciCalc
+         calc.calculate(("2 - 2")) should be(0)
+         calc.calculate(("1 * 2")) should be(2)
+         calc.calculate(("10 % 2")) should be(0)
+         calc.calculate(("math.cos(1)")) should be(0.5403023058681398)
+         calc.calculate(("math.tan(1)")) should be(1.5574077246549023)
+      
       }
       
     }

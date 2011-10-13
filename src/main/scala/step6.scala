@@ -1,6 +1,9 @@
 import scala.util.matching.Regex
+import scala.tools.nsc.{Interpreter,Settings}
+
 
 import java.text.{NumberFormat, ParsePosition}
+
  
 
 package learning{
@@ -17,8 +20,7 @@ def isNumeric(input: String): Boolean = {
     input.length == pos.getIndex // valid if parse position is at end of string
 }
 
-  
-  def parseCalc(calc: String): Tuple3[String,String,String] = {
+ def parseCalc(calc: String): Tuple3[String,String,String] = {
   
     val Parse = """^.*?(\d*\.?\d*)\W*([+])\W*(\d+\.?\d*)\W*""".r
     
@@ -27,13 +29,22 @@ def isNumeric(input: String): Boolean = {
     (first,op,last)
     
   }
-   def calculate(parts: Tuple3[String,String,String]): Double = {
-      parts match{
-        case (f,"+",e) => f.toDouble + e.toDouble
-        case (f,"/",e) => f.toDouble / e.toDouble
-        
-        }
-   }
+   def calculate(input: String): Double = {
+      
+      var last = if(resultSoFar != 0) resultSoFar.toString else ""
+      
+      val settings = new Settings
+      settings.embeddedDefaults[SciCalc]
+      val interpreter = new Interpreter(settings)
+      var res = Array[Any](null)
+      interpreter.beQuietDuring({
+      interpreter.bind("result", "Array[Any]", res)
+      interpreter.interpret("class Calculator {def calc:Double = " + last + input + "}")
+      interpreter.interpret("result(0) = new Calculator")
+      })
+
+      res(0).asInstanceOf[{def calc: Double}].calc
+  }
     
   def run{
     
@@ -41,15 +52,7 @@ def isNumeric(input: String): Boolean = {
     while(calc != ""){
     try {
     
-    val parts = parseCalc(calc)
-    
-    val f = if(parts._1 == "")
-      (resultSoFar.toString, parts._2, parts._3)
-    else 
-      parts
-      
-    
-    resultSoFar = calculate(f)
+    resultSoFar = calculate(calc)
     
     print("= " + resultSoFar.toString)
     

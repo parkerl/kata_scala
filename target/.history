@@ -47,3 +47,24 @@ exit
 test
 run
 test
+exit
+run
+import scala.tools.nsc.{Interpreter,Settings}
+exit
+run
+-v
+run
+console
+import scala.tools.nsc.interpreter.{IMain,ISettings}
+import IMain._
+import scala._
+run
+exit
+run
+console
+run
+run -deprecation
+run
+test
+run
+exit

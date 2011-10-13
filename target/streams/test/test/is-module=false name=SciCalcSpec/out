@@ -6,3 +6,4 @@
 [0m[[0minfo[0m] [0m[32m- calculate 1 + 1 = 2[0m[0m
 [0m[[0minfo[0m] [0m[32m- should calculate 10 / 5 = 2[0m[0m
 [0m[[0minfo[0m] [0m[32m- should string together subsequent calculations, 1 +1, + 1 = 3[0m[0m
+[0m[[0minfo[0m] [0m[32m- should correctly run the following calculations[0m[0m
