@@ -4,15 +4,6 @@ import scala.collection.mutable.Stack
 import learning.NumberCruncher
 
 
-trait MockListInput extends learning.InputReader {
-     
-     var input: Iterator[String] = List("").iterator
-     
-     override def read(prompt: String) = input.next()
-     
-     def setInput(in: List[String]) = input = in.iterator
-     
-  }
 
 class NumberCruncherSpec extends Spec with ShouldMatchers {
 

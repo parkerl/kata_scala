@@ -11,26 +11,6 @@ If it’s between 2100 and 4000 display ’Transient flow’ and if more than �
 
 
 
-trait MockInputCapturePrompt extends MockListInput {
-     
-     var messages = List[String]()
-     
-     override def read(prompt: String) = {
-     messages = messages :+ prompt
-     input.next()
-     }
-     
-  }
-
-trait MockOutputResultCapture extends learning.Output {
-     
-     var outmessages = List[String]()
-     
-     override def print(s: Any) = {
-     outmessages = outmessages :+ s.toString
-     }
-     
-  }
 
 class FlowCalcSpec extends Spec with ShouldMatchers {
 
