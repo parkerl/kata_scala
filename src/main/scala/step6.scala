@@ -1,10 +1,7 @@
 import scala.util.matching.Regex
 import scala.tools.nsc.{Interpreter,Settings}
 
-
 import java.text.{NumberFormat, ParsePosition}
-
- 
 
 package learning{
 
@@ -63,8 +60,6 @@ def isNumeric(input: String): Boolean = {
     }
 
   }
-  
-     
   
 }
 
